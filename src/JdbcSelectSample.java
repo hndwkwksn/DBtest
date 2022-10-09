@@ -14,7 +14,7 @@ public class JdbcSelectSample {
 
         try {
             // com.mysql.cj.jdbc.Driverクラスをロードして、初期化処理を行う
-            Class.forName(DRIVER);
+            Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             // ドライバのクラスがクラスパスに見つからなかった場合にClassNotFoundExceptionが発生します。
             e.printStackTrace();
